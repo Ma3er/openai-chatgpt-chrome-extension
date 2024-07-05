@@ -282,3 +282,52 @@ a {
     font-weight: lighter;
     margin: 0;
 }
+
+/* Existing styles */
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.command-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.command-button:hover {
+    background-color: #45a049;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}

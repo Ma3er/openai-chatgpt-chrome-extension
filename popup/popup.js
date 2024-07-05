@@ -379,3 +379,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const inputField = document.getElementById('user-input');
+    const sendButton = document.getElementById('send-btn');
+    const commandButtons = document.querySelectorAll('.command-button');
+
+    commandButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            inputField.value = button.getAttribute('data-command');
+        });
+    });
+
+    sendButton.addEventListener('click', function () {
+        const message = inputField.value;
+        if (message) {
+            // Handle sending the message
+            console.log('Sending message:', message);
+            // Clear the input field after sending the message
+            inputField.value = '';
+        }
+    });
+});
